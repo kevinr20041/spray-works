@@ -166,7 +166,7 @@ export const faqs = [
 export type PortfolioItem = {
   id: string;
   title: string;
-  category: "Kitchen" | "uPVC & Aluminium" | "Furniture";
+  category: "Kitchen" | "uPVC & Aluminium" | "Furniture" | "Shop Fronts";
   image: string;
   before?: string;
   after?: string;
@@ -202,14 +202,54 @@ export const portfolio: PortfolioItem[] = [
     description:
       "A fresh, sleek black respray for this kitchen island, professionally prepped and refinished for a smooth, durable, factory-style finish.",
   },
+  {
+    id: "front-door-respray",
+    title: "Front Door Respray",
+    category: "uPVC & Aluminium",
+    image: "/images/portfolio/front-door-flyer.jpg",
+    description:
+      "A stained-glass front door resprayed from white to black for a striking kerb-appeal upgrade. Front door resprays start from €350, a new look without the new-door price.",
+  },
+  {
+    id: "kitchen-respray",
+    title: "Kitchen Cabinet Respray",
+    category: "Kitchen",
+    image: "/images/portfolio/kitchen-ba.jpg",
+    description:
+      "Dated oak cabinetry resprayed in a soft dove grey, giving this kitchen a completely updated look without a full replacement.",
+  },
+  {
+    id: "upvc-window-respray",
+    title: "uPVC Window Respray",
+    category: "uPVC & Aluminium",
+    image: "/images/portfolio/upvc-ba.jpg",
+    description:
+      "Tired white uPVC window frames resprayed in anthracite grey on-site, for a sharp, modern finish that lasts.",
+  },
+  {
+    id: "furniture-respray",
+    title: "Bedroom Furniture Respray",
+    category: "Furniture",
+    image: "/images/portfolio/furniture-ba.jpg",
+    description:
+      "A honey-oak chest of drawers resprayed in matte black, transforming an everyday piece into a striking bedroom feature.",
+  },
+  {
+    id: "shop-front-respray",
+    title: "Shop Front Respray",
+    category: "Shop Fronts",
+    image: "/images/portfolio/shopfront-ba.jpg",
+    description:
+      "A weathered bakery shop front resprayed in deep charcoal, sharpening the storefront's kerb appeal with minimal disruption to trade.",
+  },
 ];
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Our Work" },
-  { href: "#process", label: "Process" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/services", label: "Services" },
+  { href: "/our-work", label: "Our Work" },
+  { href: "/process", label: "Process" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
 ] as const;

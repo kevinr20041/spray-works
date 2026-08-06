@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { navLinks, business } from "@/lib/data";
@@ -11,6 +13,7 @@ import { InstagramIcon, FacebookIcon } from "./icons/SocialIcons";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -36,8 +39,8 @@ export default function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-5 sm:px-8">
-        <a href="#home" className="flex items-center gap-3 group">
-          <span className="relative h-11 w-11 shrink-0 overflow-hidden bg-charcoal ring-1 ring-gold/40 transition-transform duration-300 group-hover:scale-105">
+        <Link href="/" className="flex items-center gap-3 group">
+          <span className="relative h-11 w-11 shrink-0 overflow-hidden bg-ink ring-1 ring-gold/40 transition-transform duration-300 group-hover:scale-105">
             <Image
               src="/images/brand/logo-mark.png"
               alt={`${business.name} logo`}
@@ -50,19 +53,26 @@ export default function Navbar() {
           <span className="font-display text-xl tracking-tight text-ivory">
             Spray Works
           </span>
-        </a>
+        </Link>
 
         <ul className="hidden lg:flex items-center gap-9 text-[13px] font-medium uppercase tracking-[0.14em] text-ivory/70">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="relative py-1 transition-colors hover:text-gold"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            const isActive =
+              link.href === "/" ? pathname === "/" : pathname?.startsWith(link.href);
+            return (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={cn(
+                    "relative py-1 transition-colors hover:text-gold",
+                    isActive && "text-gold"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <div className="hidden lg:flex items-center gap-6">
@@ -84,12 +94,12 @@ export default function Navbar() {
           >
             <FacebookIcon className="h-[18px] w-[18px]" />
           </a>
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="inline-flex items-center bg-gold px-6 py-2.5 text-[13px] font-semibold uppercase tracking-[0.12em] text-ink transition-[background-color,transform] duration-200 hover:bg-ivory active:scale-[0.97]"
           >
             Get a Free Quote
-          </a>
+          </Link>
         </div>
 
         <button
@@ -115,24 +125,24 @@ export default function Navbar() {
             <ul className="flex flex-col px-6 py-4 text-ivory/85">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className="block py-3.5 text-lg font-display border-b border-ivory/10"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
             <div className="px-6 pb-8 pt-2">
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 onClick={() => setOpen(false)}
                 className="block w-full bg-gold py-3 text-center text-[13px] font-semibold uppercase tracking-[0.12em] text-ink transition-transform active:scale-[0.97]"
               >
                 Get a Free Quote
-              </a>
+              </Link>
               <div className="mt-6 flex justify-center gap-6 text-ivory/60">
                 <a
                   href={business.instagramUrl}

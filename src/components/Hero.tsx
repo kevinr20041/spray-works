@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { business } from "@/lib/data";
 import { WordRotate } from "@/components/ui/word-rotate";
@@ -63,22 +64,22 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-10 flex flex-wrap items-center gap-4"
           >
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center bg-gold px-8 py-4 text-[13px] uppercase tracking-[0.12em] text-ink transition-[background-color,transform] duration-200 hover:bg-ivory active:scale-[0.97]"
             >
               Get a Free Quote
-            </a>
-            <a
-              href="#portfolio"
+            </Link>
+            <Link
+              href="/our-work"
               className="inline-flex items-center justify-center border border-ivory/25 px-8 py-4 text-[13px] uppercase tracking-[0.12em] text-ivory transition-[border-color,transform] duration-200 hover:border-ivory active:scale-[0.97]"
             >
               View Our Work
-            </a>
+            </Link>
           </motion.div>
         </div>
 
-        <div className="relative flex items-center justify-center gap-4 bg-charcoal px-6 py-14 sm:gap-5 sm:px-10 lg:px-12 lg:pt-32 lg:pb-14">
+        <div className="relative flex items-center justify-center gap-4 bg-ink px-6 py-14 sm:gap-5 sm:px-10 lg:border-l lg:border-ivory/10 lg:px-12 lg:pt-32 lg:pb-14">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}

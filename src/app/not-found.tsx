@@ -22,7 +22,7 @@ export default function NotFound() {
           Back to Home
         </Link>
         <Link
-          href="/#contact"
+          href="/contact"
           className="inline-flex items-center justify-center border border-ivory/25 px-8 py-4 text-[13px] uppercase tracking-[0.12em] text-ivory transition-[border-color,transform] duration-200 hover:border-ivory active:scale-[0.97]"
         >
           Get a Free Quote

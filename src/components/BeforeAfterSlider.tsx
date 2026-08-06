@@ -29,7 +29,7 @@ export default function BeforeAfterSlider({ before, after, alt, className }: Pro
     <div
       ref={containerRef}
       className={cn(
-        "group relative aspect-[4/3] w-full select-none overflow-hidden bg-charcoal",
+        "group relative aspect-[4/3] w-full select-none overflow-hidden bg-ink",
         className
       )}
       onMouseMove={(e) => {

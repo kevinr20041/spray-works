@@ -12,7 +12,7 @@ const items = [
 
 export default function ServiceMarquee() {
   return (
-    <div className="relative border-y border-ivory/10 bg-charcoal py-4">
+    <div className="relative border-y border-ivory/10 bg-ink py-4">
       <Marquee pauseOnHover className="[--duration:32s]">
         {items.map((item) => (
           <span
@@ -24,8 +24,8 @@ export default function ServiceMarquee() {
           </span>
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-charcoal to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-charcoal to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-ink to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-ink to-transparent" />
     </div>
   );
 }

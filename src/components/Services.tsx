@@ -1,8 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { services } from "@/lib/data";
+
+const MotionLink = motion.create(Link);
 
 export default function Services() {
   return (
@@ -26,9 +29,9 @@ export default function Services() {
 
         <div>
           {services.map((service, i) => (
-            <motion.a
+            <MotionLink
               key={service.id}
-              href="#contact"
+              href="/contact"
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -55,7 +58,7 @@ export default function Services() {
                 size={22}
                 className="hidden shrink-0 text-ivory/30 transition-[transform,color] duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-gold sm:block"
               />
-            </motion.a>
+            </MotionLink>
           ))}
         </div>
       </div>

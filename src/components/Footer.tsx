@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { business, navLinks } from "@/lib/data";
 import { InstagramIcon, FacebookIcon, WhatsAppIcon } from "./icons/SocialIcons";
 
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <span className="relative h-8 w-8 overflow-hidden bg-charcoal">
+              <span className="relative h-8 w-8 overflow-hidden bg-ink ring-1 ring-ivory/10">
                 <Image
                   src="/images/brand/logo-mark.png"
                   alt={`${business.name} logo`}
@@ -62,12 +63,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-ivory/55 transition-colors hover:text-ivory"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

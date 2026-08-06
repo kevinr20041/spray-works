@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
                   "relative overflow-hidden border border-ivory/10 p-7",
                   spans[i],
                   hasImage ? "min-h-[220px]" : "min-h-[140px]",
-                  hasGradient && "bg-gradient-to-br from-gold/20 via-charcoal to-charcoal"
+                  hasGradient && "bg-gradient-to-br from-gold/20 via-ink to-ink"
                 )}
               >
                 {hasImage && (

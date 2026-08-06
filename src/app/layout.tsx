@@ -3,6 +3,9 @@ import { Inter, Bricolage_Grotesque } from "next/font/google";
 import { business } from "@/lib/data";
 import LoadingScreen from "@/components/LoadingScreen";
 import ScrollProgress from "@/components/ScrollProgress";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import FloatingButtons from "@/components/FloatingButtons";
 import "./globals.css";
 
 const inter = Inter({
@@ -107,7 +110,10 @@ export default function RootLayout({
         </a>
         <LoadingScreen />
         <ScrollProgress />
+        <Navbar />
         {children}
+        <Footer />
+        <FloatingButtons />
       </body>
     </html>
   );
