@@ -31,7 +31,7 @@ const visuals: Record<number, { type: "image" | "gradient"; src?: string; alt?: 
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative bg-ink py-24 sm:py-32">
+    <section className="relative border-t border-ivory/10 bg-ink py-24 sm:py-32">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
