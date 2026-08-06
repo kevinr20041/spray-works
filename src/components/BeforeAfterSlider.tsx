@@ -43,7 +43,7 @@ export default function BeforeAfterSlider({ before, after, alt, className }: Pro
       <div className="absolute inset-0">
         <Image
           src={after}
-          alt={`${alt} — after`}
+          alt={`${alt} (after)`}
           fill
           sizes="(min-width: 1024px) 33vw, 90vw"
           className="object-cover"
@@ -59,7 +59,7 @@ export default function BeforeAfterSlider({ before, after, alt, className }: Pro
       >
         <Image
           src={before}
-          alt={`${alt} — before`}
+          alt={`${alt} (before)`}
           fill
           sizes="(min-width: 1024px) 33vw, 90vw"
           className="object-cover"

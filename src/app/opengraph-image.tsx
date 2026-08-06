@@ -14,15 +14,17 @@ export default async function Image() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "0 90px",
-          background: "#0c0b09",
+          background: "#090909",
         }}
       >
         <div
           style={{
             display: "flex",
             fontSize: 22,
-            fontStyle: "italic",
-            color: "#af8a3f",
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: 4,
+            color: "#c79a3b",
             marginBottom: 22,
           }}
         >
@@ -32,7 +34,8 @@ export default async function Image() {
           style={{
             display: "flex",
             fontSize: 78,
-            color: "#f2ede1",
+            fontWeight: 700,
+            color: "#f5f5f3",
             letterSpacing: -1.5,
             lineHeight: 1.05,
           }}
@@ -43,7 +46,8 @@ export default async function Image() {
           style={{
             display: "flex",
             fontSize: 78,
-            color: "#f2ede1",
+            fontWeight: 700,
+            color: "#f5f5f3",
             letterSpacing: -1.5,
             lineHeight: 1.05,
           }}
@@ -54,11 +58,11 @@ export default async function Image() {
           style={{
             display: "flex",
             fontSize: 24,
-            color: "rgba(242,237,225,0.5)",
+            color: "rgba(245,245,243,0.5)",
             marginTop: 30,
           }}
         >
-          Spray Works — Kitchen · Furniture · uPVC Spraying
+          Spray Works. Kitchen, Furniture, uPVC Spraying.
         </div>
       </div>
     ),

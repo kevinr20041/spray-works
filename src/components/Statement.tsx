@@ -25,7 +25,7 @@ export default function Statement() {
         transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
         className="relative mx-auto max-w-4xl px-5 text-center sm:px-8"
       >
-        <p className="text-balance font-display text-4xl italic leading-[1.15] text-ivory sm:text-5xl lg:text-6xl">
+        <p className="text-balance font-display text-4xl font-medium leading-[1.15] tracking-tight text-ivory sm:text-5xl lg:text-6xl">
           A factory finish, sprayed on-site, for a fraction of the cost of
           replacement.
         </p>

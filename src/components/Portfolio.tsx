@@ -31,7 +31,7 @@ export default function Portfolio() {
           className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between"
         >
           <div className="max-w-xl">
-            <h2 className="text-balance font-display text-5xl leading-[1.02] tracking-tight text-ink sm:text-6xl">
+            <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ink sm:text-6xl">
               Our work
             </h2>
             <p className="mt-5 text-ink/55">

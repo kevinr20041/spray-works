@@ -15,7 +15,7 @@ export default function FAQ() {
           className="lg:col-span-4"
         >
           <div className="lg:sticky lg:top-32">
-            <h2 className="text-balance font-display text-5xl leading-[1.02] tracking-tight text-ivory">
+            <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ivory">
               Frequently asked
             </h2>
             <p className="mt-5 max-w-xs text-ivory/50">

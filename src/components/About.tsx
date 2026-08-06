@@ -39,7 +39,7 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
           className="order-1 lg:order-2 lg:col-span-6 lg:col-start-7 lg:pt-6"
         >
-          <h2 className="text-balance font-display text-5xl leading-[1.02] tracking-tight text-ink sm:text-6xl">
+          <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ink sm:text-6xl">
             Transform,
             <br />
             don&apos;t replace.

@@ -50,11 +50,11 @@ export default function Contact() {
           transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
           className="max-w-xl"
         >
-          <h2 className="text-balance font-display text-5xl leading-[1.02] tracking-tight text-ivory sm:text-6xl">
+          <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ivory sm:text-6xl">
             Get your free quote
           </h2>
           <p className="mt-5 text-ivory/55">
-            Message Spray Works via WhatsApp, phone or the form below —
+            Message Spray Works via WhatsApp, phone or the form below,
             covering {business.area}.
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ export default function Contact() {
 
             <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden border border-ivory/10">
               <iframe
-                title="Spray Works — Dublin, Ireland"
+                title="Spray Works, Dublin, Ireland"
                 src="https://www.google.com/maps?q=Dublin,+Ireland&z=11&output=embed"
                 width="100%"
                 height="100%"
@@ -107,8 +107,8 @@ export default function Contact() {
               <BorderBeam
                 size={90}
                 duration={8}
-                colorFrom="#af8a3f"
-                colorTo="#f2ede1"
+                colorFrom="#c79a3b"
+                colorTo="#f5f5f3"
               />
             </div>
 

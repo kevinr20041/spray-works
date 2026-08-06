@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-display text-sm italic text-gold">Navigate</p>
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.14em] text-gold">Navigate</p>
             <ul className="mt-4 space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-display text-sm italic text-gold">Contact</p>
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.14em] text-gold">Contact</p>
             <ul className="mt-4 space-y-2.5 text-sm text-ivory/55">
               <li>
                 <a href={business.phoneHref} className="hover:text-ivory">

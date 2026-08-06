@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import { business } from "@/lib/data";
 import LoadingScreen from "@/components/LoadingScreen";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -11,12 +11,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
   display: "swap",
-  axes: ["opsz", "SOFT"],
-  style: ["normal", "italic"],
 });
 
 const siteUrl = "https://sprayworks.ie";
@@ -24,11 +22,11 @@ const siteUrl = "https://sprayworks.ie";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${business.name} | Premium Spray Finishing — ${business.area}`,
+    default: `${business.name} | Premium Spray Finishing in ${business.area}`,
     template: `%s | ${business.name}`,
   },
   description:
-    "Spray Works are Dublin spray finishing specialists — premium kitchen, furniture, uPVC & aluminium, and shop front spraying. Factory-quality results without the cost of replacement. Free quotes.",
+    "Spray Works are Dublin spray finishing specialists offering premium kitchen, furniture, uPVC & aluminium, and shop front spraying. Factory-quality results without the cost of replacement. Free quotes.",
   keywords: [
     "spray works",
     "kitchen respray Dublin",
@@ -64,7 +62,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0c0b09",
+  themeColor: "#090909",
   width: "device-width",
   initialScale: 1,
 };
@@ -94,7 +92,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${inter.variable} ${fraunces.variable}`}
+      className={`${inter.variable} ${bricolage.variable}`}
     >
       <body className="min-h-full flex flex-col bg-ink font-sans antialiased bg-noise">
         <script

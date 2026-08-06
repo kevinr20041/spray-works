@@ -16,7 +16,7 @@ export default function ServiceMarquee() {
         {items.map((item) => (
           <span
             key={item}
-            className="flex items-center gap-8 font-display text-sm italic text-ivory/50"
+            className="flex items-center gap-8 font-display text-sm font-medium uppercase tracking-[0.1em] text-ivory/50"
           >
             {item}
             <span className="text-gold/50">&middot;</span>

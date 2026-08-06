@@ -18,13 +18,13 @@ export default function Hero() {
   return (
     <section id="home" className="relative bg-ink">
       <div className="grid grid-cols-1 lg:min-h-[100svh] lg:grid-cols-[1.05fr_1fr]">
-        <div className="relative flex flex-col justify-center px-5 pt-32 pb-16 sm:px-8 lg:px-16 lg:pt-24">
+        <div className="relative flex flex-col justify-center px-5 pt-24 pb-16 sm:px-8 lg:px-16">
           <motion.p
             initial="hidden"
             animate="show"
             custom={0}
             variants={fadeUp}
-            className="font-display text-sm italic text-gold"
+            className="font-display text-sm font-semibold uppercase tracking-[0.14em] text-gold"
           >
             {business.area}
           </motion.p>
@@ -34,7 +34,7 @@ export default function Hero() {
             animate="show"
             custom={1}
             variants={fadeUp}
-            className="mt-5 max-w-xl text-balance font-display text-[13vw] leading-[0.95] tracking-tight text-ivory sm:text-6xl lg:text-[4.6rem]"
+            className="mt-5 max-w-xl text-balance font-display text-[13vw] font-bold leading-[0.95] tracking-tight text-ivory sm:text-6xl lg:text-[4.6rem]"
           >
             Precision finish,
             <br />
@@ -52,8 +52,8 @@ export default function Hero() {
             <WordRotate
               words={["kitchens", "furniture", "uPVC & aluminium", "commercial spaces"]}
               className="text-ivory"
-            />{" "}
-            — a factory-quality result without the cost of replacement.
+            />
+            , a factory-quality result without the cost of replacement.
           </motion.p>
 
           <motion.div
@@ -75,19 +75,6 @@ export default function Hero() {
             >
               View Our Work
             </a>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            animate="show"
-            custom={4}
-            variants={fadeUp}
-            className="mt-16 flex flex-wrap gap-x-8 gap-y-2 border-t border-ivory/10 pt-6 text-xs uppercase tracking-[0.14em] text-ivory/40"
-          >
-            <span>Kitchens</span>
-            <span>Furniture</span>
-            <span>uPVC &amp; Aluminium</span>
-            <span>Shop Fronts</span>
           </motion.div>
         </div>
 

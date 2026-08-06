@@ -26,7 +26,7 @@ export default function Process() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
         >
-          <h2 className="text-balance font-display text-5xl leading-[1.02] tracking-tight text-ink sm:text-6xl">
+          <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ink sm:text-6xl">
             Our process
           </h2>
         </motion.div>

@@ -88,7 +88,7 @@ export default function Navbar() {
             href="#contact"
             className="inline-flex items-center bg-gold px-6 py-2.5 text-[13px] font-semibold uppercase tracking-[0.12em] text-ink transition-[background-color,transform] duration-200 hover:bg-ivory active:scale-[0.97]"
           >
-            Get a Quote
+            Get a Free Quote
           </a>
         </div>
 
@@ -131,7 +131,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="block w-full bg-gold py-3 text-center text-[13px] font-semibold uppercase tracking-[0.12em] text-ink transition-transform active:scale-[0.97]"
               >
-                Get a Quote
+                Get a Free Quote
               </a>
               <div className="mt-6 flex justify-center gap-6 text-ivory/60">
                 <a

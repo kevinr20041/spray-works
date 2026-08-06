@@ -13,14 +13,12 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
-          className="flex flex-col gap-6 border-b border-ivory/10 pb-10 sm:flex-row sm:items-end sm:justify-between"
+          className="max-w-2xl border-b border-ivory/10 pb-10"
         >
-          <div className="max-w-xl">
-            <h2 className="text-balance font-display text-5xl leading-[1.02] tracking-tight text-ivory sm:text-6xl">
-              Spray finishing services
-            </h2>
-          </div>
-          <p className="max-w-xs text-sm text-ivory/45">
+          <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ivory sm:text-6xl">
+            Spray finishing services
+          </h2>
+          <p className="mt-5 max-w-lg text-ivory/50">
             Professional spray finishing for homes and businesses, built on
             careful preparation and a factory-style result.
           </p>
@@ -37,7 +35,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: i * 0.06, ease: [0.23, 1, 0.32, 1] }}
               className="group grid grid-cols-1 items-center gap-4 border-b border-ivory/10 py-9 transition-transform duration-200 active:scale-[0.99] sm:grid-cols-[70px_1fr_auto] sm:gap-8"
             >
-              <span className="font-display text-lg italic text-ivory/30">
+              <span className="font-display text-lg font-semibold text-ivory/30">
                 {String(i + 1).padStart(2, "0")}
               </span>
 

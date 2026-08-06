@@ -35,7 +35,7 @@ export const services = [
     description:
       "Professional spraying for a flawless, factory-finish look that lasts.",
     detail:
-      "Tired timber-effect or faded uPVC and aluminium frames refinished on-site in a colour of your choice — including popular shades like RAL 7016 Anthracite Grey.",
+      "Tired timber-effect or faded uPVC and aluminium frames refinished on-site in a colour of your choice, including popular shades like RAL 7016 Anthracite Grey.",
     icon: "door",
   },
   {
@@ -120,7 +120,7 @@ export const process = [
   {
     step: "06",
     title: "Final Result",
-    description: "A refreshed, factory-quality finish — completed with minimal disruption.",
+    description: "A refreshed, factory-quality finish, completed with minimal disruption.",
   },
 ] as const;
 
@@ -128,7 +128,7 @@ export const faqs = [
   {
     question: "How long does spraying typically take?",
     answer:
-      "Timing depends on the size and scope of the project — a single piece of furniture takes less time than a full kitchen or a set of doors and windows. Get in touch with your project details for an accurate timeframe as part of your free quote.",
+      "Timing depends on the size and scope of the project. A single piece of furniture takes less time than a full kitchen or a set of doors and windows. Get in touch with your project details for an accurate timeframe as part of your free quote.",
   },
   {
     question: "Can kitchen cabinets really be sprayed instead of replaced?",
@@ -153,7 +153,7 @@ export const faqs = [
   {
     question: "What colours can I choose from?",
     answer:
-      "A wide range of colours is available so you can choose a bespoke finish to suit your style — from popular shades like Anthracite Grey through to bold statement colours.",
+      "A wide range of colours is available so you can choose a bespoke finish to suit your style, from popular shades like Anthracite Grey through to bold statement colours.",
   },
   {
     question: "How do I get a quote?",
@@ -181,7 +181,7 @@ export const portfolio: PortfolioItem[] = [
     before: "/images/portfolio/door-before-1.jpg",
     after: "/images/portfolio/door-after-1.jpg",
     description:
-      "Timber-effect aluminium door and window system resprayed in RAL 7016 Anthracite Grey — a full on-site transformation with minimal disruption.",
+      "Timber-effect aluminium door and window system resprayed in RAL 7016 Anthracite Grey, a full on-site transformation with minimal disruption.",
   },
   {
     id: "door-respray-2",
@@ -191,7 +191,7 @@ export const portfolio: PortfolioItem[] = [
     before: "/images/portfolio/door-before-2.jpg",
     after: "/images/portfolio/door-after-2.jpg",
     description:
-      "The same anthracite grey respray, viewed from the balcony — a completely refreshed look without the cost of replacement.",
+      "The same anthracite grey respray, viewed from the balcony. A completely refreshed look without the cost of replacement.",
   },
   {
     id: "kitchen-island",
@@ -199,7 +199,7 @@ export const portfolio: PortfolioItem[] = [
     category: "Kitchen",
     image: "/images/portfolio/kitchen-island-after.jpg",
     description:
-      "A fresh, sleek black respray for this kitchen island — professionally prepped and refinished for a smooth, durable, factory-style finish.",
+      "A fresh, sleek black respray for this kitchen island, professionally prepped and refinished for a smooth, durable, factory-style finish.",
   },
 ];
 

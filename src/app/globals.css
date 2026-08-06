@@ -5,15 +5,16 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --color-gold: #af8a3f;
-  --color-gold-deep: #7c611f;
-  --color-ink: #0c0b09;
-  --color-charcoal: #17140f;
-  --color-charcoal-soft: #201c15;
-  --color-ivory: #f2ede1;
-  --color-ivory-dim: #e8e1d1;
-  --color-line: rgba(242, 237, 225, 0.12);
-  --color-line-dark: rgba(12, 11, 9, 0.12);
+  /* Brand palette from the original brief: Luxury Gold, Black, Charcoal, White */
+  --color-gold: #c79a3b;
+  --color-gold-deep: #8f6a22;
+  --color-ink: #090909;
+  --color-charcoal: #151515;
+  --color-charcoal-soft: #1e1e1e;
+  --color-ivory: #f5f5f3;
+  --color-ivory-dim: #e9e9e6;
+  --color-line: rgba(245, 245, 243, 0.12);
+  --color-line-dark: rgba(9, 9, 9, 0.12);
 
   /* shadcn/MagicUI tokens, remapped to the brand palette (site has one theme, no light/dark toggle) */
   --background: var(--color-ink);
@@ -27,7 +28,7 @@
   --secondary: var(--color-charcoal-soft);
   --secondary-foreground: var(--color-ivory);
   --muted: var(--color-charcoal-soft);
-  --muted-foreground: rgba(242, 237, 225, 0.55);
+  --muted-foreground: rgba(245, 245, 243, 0.55);
   --accent: var(--color-charcoal-soft);
   --accent-foreground: var(--color-gold);
   --destructive: oklch(0.577 0.245 27.325);
@@ -45,7 +46,7 @@
   --color-charcoal-soft: var(--color-charcoal-soft);
   --color-ivory: var(--color-ivory);
   --color-ivory-dim: var(--color-ivory-dim);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-bricolage);
   --font-sans: var(--font-inter);
   --color-ring: var(--ring);
   --color-input: var(--input);
