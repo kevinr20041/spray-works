@@ -26,7 +26,7 @@ export default function Hero() {
             variants={fadeUp}
             className="font-display text-sm font-semibold uppercase tracking-[0.14em] text-gold"
           >
-            {business.area}
+            {business.areaTag}
           </motion.p>
 
           <motion.h1

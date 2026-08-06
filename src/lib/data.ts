@@ -15,6 +15,7 @@ export const business = {
   instagramUrl: "https://www.instagram.com/sprayworks_irl",
   facebookUrl: "https://www.facebook.com/share/18vXvodLCv/",
   area: "Dublin & Nationwide",
+  areaTag: "Based in Dublin, Serve Nationwide",
   areaLong: "Dublin & surrounding areas",
   addressLocality: "Dublin, Ireland", // PLACEHOLDER: no street address published — confirm with client
 };

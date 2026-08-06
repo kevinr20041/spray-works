@@ -86,7 +86,7 @@ export default function Footer() {
                   {business.email}
                 </a>
               </li>
-              <li>{business.area}</li>
+              <li>{business.areaTag}</li>
             </ul>
           </div>
         </div>

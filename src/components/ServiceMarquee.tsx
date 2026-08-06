@@ -1,4 +1,5 @@
 import { Marquee } from "@/components/ui/marquee";
+import { business } from "@/lib/data";
 
 const items = [
   "Kitchen Respraying",
@@ -6,7 +7,7 @@ const items = [
   "Furniture Spraying",
   "Shop Fronts",
   "Commercial Spraying",
-  "Dublin & Nationwide",
+  business.areaTag,
 ];
 
 export default function ServiceMarquee() {
