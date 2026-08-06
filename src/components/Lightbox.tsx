@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useCallback } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import type { PortfolioItem } from "@/lib/data";
+import { FadeImage } from "@/components/ui/fade-image";
 
 type Props = {
   items: PortfolioItem[];
@@ -84,7 +84,7 @@ export default function Lightbox({ items, index, onClose, onNavigate }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative aspect-[4/3] w-full overflow-hidden">
-          <Image
+          <FadeImage
             src={item.image}
             alt={item.title}
             fill

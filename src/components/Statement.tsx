@@ -1,21 +1,21 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { FadeImage } from "@/components/ui/fade-image";
 import { NumberTicker } from "@/components/ui/number-ticker";
 
 export default function Statement() {
   return (
     <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-ink py-24">
       <div className="absolute inset-0">
-        <Image
+        <FadeImage
           src="/images/portfolio/door-after-2.jpg"
           alt="Aluminium door and window respray, finished in anthracite grey"
           fill
           sizes="100vw"
-          className="object-cover"
+          className="scale-110 object-cover blur-sm"
         />
-        <div className="absolute inset-0 bg-ink/78" />
+        <div className="absolute inset-0 bg-ink/80" />
       </div>
 
       <motion.div

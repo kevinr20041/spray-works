@@ -1,9 +1,9 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import Image from "next/image";
 import { MoveHorizontal } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { FadeImage } from "@/components/ui/fade-image";
 
 type Props = {
   before: string;
@@ -41,7 +41,7 @@ export default function BeforeAfterSlider({ before, after, alt, className }: Pro
       onTouchEnd={() => (dragging.current = false)}
     >
       <div className="absolute inset-0">
-        <Image
+        <FadeImage
           src={after}
           alt={`${alt} (after)`}
           fill
@@ -57,7 +57,7 @@ export default function BeforeAfterSlider({ before, after, alt, className }: Pro
         className="absolute inset-0"
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
       >
-        <Image
+        <FadeImage
           src={before}
           alt={`${alt} (before)`}
           fill

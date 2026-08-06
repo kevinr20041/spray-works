@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { FadeImage } from "@/components/ui/fade-image";
 
 const points = [
   "Factory-quality, sprayed-on finish",
@@ -22,7 +22,7 @@ export default function About() {
           className="relative order-2 lg:order-1 lg:col-span-5"
         >
           <div className="relative aspect-[4/5] w-full overflow-hidden">
-            <Image
+            <FadeImage
               src="/images/portfolio/kitchen-island-after.jpg"
               alt="Professionally resprayed black kitchen island"
               fill

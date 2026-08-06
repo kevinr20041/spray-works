@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { business } from "@/lib/data";
 import { WordRotate } from "@/components/ui/word-rotate";
+import { FadeImage } from "@/components/ui/fade-image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 22 },
@@ -85,7 +85,7 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: [0.23, 1, 0.32, 1] }}
             className="relative aspect-[4/5] w-1/2 self-start overflow-hidden"
           >
-            <Image
+            <FadeImage
               src="/images/portfolio/door-after-1.jpg"
               alt="Aluminium door and window system professionally resprayed in anthracite grey"
               fill
@@ -100,7 +100,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.15, ease: [0.23, 1, 0.32, 1] }}
             className="relative aspect-[4/5] w-1/2 self-end overflow-hidden"
           >
-            <Image
+            <FadeImage
               src="/images/portfolio/kitchen-island-after.jpg"
               alt="Professionally resprayed black kitchen island"
               fill

@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { whyChoose } from "@/lib/data";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { FadeImage } from "@/components/ui/fade-image";
 import { cn } from "@/lib/utils";
 
 const spans = [
@@ -67,7 +67,7 @@ export default function WhyChooseUs() {
               >
                 {hasImage && (
                   <>
-                    <Image
+                    <FadeImage
                       src={visual.src!}
                       alt={visual.alt ?? ""}
                       fill
