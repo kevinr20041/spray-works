@@ -152,6 +152,15 @@ textarea:focus-visible,
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* The service marquee is a continuously scrolling content ticker, not a
+     decorative flourish — freezing it after one 0.01ms frame leaves it
+     stuck on a random cropped position. Keep it looping. */
+  .animate-marquee,
+  .animate-marquee-vertical {
+    animation-duration: var(--duration) !important;
+    animation-iteration-count: infinite !important;
+  }
 }
 
 @layer base {

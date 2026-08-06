@@ -31,7 +31,7 @@ export default function Statement() {
         </p>
         <p className="mt-8 font-display text-2xl text-gold">
           Kitchen resprays from &euro;
-          <NumberTicker value={875} className="font-display text-gold" />
+          <NumberTicker value={875} startValue={1200} className="font-display text-gold" />
         </p>
       </motion.div>
     </section>
