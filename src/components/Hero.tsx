@@ -35,7 +35,7 @@ export default function Hero() {
             animate="show"
             custom={1}
             variants={fadeUp}
-            className="mt-5 max-w-xl text-balance font-display text-[13vw] font-bold leading-[0.95] tracking-tight text-ivory sm:text-6xl lg:text-[4.6rem]"
+            className="mt-5 max-w-xl text-balance font-display text-[9vw] font-bold leading-[0.95] tracking-tight text-ivory sm:text-6xl lg:text-[4.6rem]"
           >
             Precision finish,
             <br />

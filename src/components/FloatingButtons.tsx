@@ -14,7 +14,7 @@ export default function FloatingButtons() {
         transition={{ delay: 1.4, duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
         href={business.phoneHref}
         aria-label={`Call ${business.name}`}
-        className="flex h-12 w-12 items-center justify-center bg-charcoal text-ivory ring-1 ring-ivory/15 transition-[background-color,transform] duration-150 hover:bg-charcoal-soft active:scale-90"
+        className="hidden h-12 w-12 items-center justify-center bg-charcoal text-ivory ring-1 ring-ivory/15 transition-[background-color,transform] duration-150 hover:bg-charcoal-soft active:scale-90 sm:flex"
       >
         <Phone size={18} />
       </motion.a>
