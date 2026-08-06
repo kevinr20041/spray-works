@@ -29,6 +29,10 @@ export default function Process() {
           <h2 className="text-balance font-display text-5xl font-bold leading-[1.02] tracking-tight text-ink sm:text-6xl">
             Our process
           </h2>
+          <p className="mt-5 max-w-lg text-ink/55">
+            From first message to final coat, here&apos;s what to expect when
+            you book a spray finishing project with Spray Works.
+          </p>
         </motion.div>
 
         <div className="mt-8">

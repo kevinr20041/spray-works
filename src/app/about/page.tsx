@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import About from "@/components/About";
+import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
   title: "About",
@@ -11,6 +12,7 @@ export default function AboutPage() {
   return (
     <main id="main-content">
       <About />
+      <CTABanner />
     </main>
   );
 }

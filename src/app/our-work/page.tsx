@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Portfolio from "@/components/Portfolio";
+import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
   title: "Our Work",
@@ -11,6 +12,10 @@ export default function OurWorkPage() {
   return (
     <main id="main-content">
       <Portfolio />
+      <CTABanner
+        heading="Like what you see?"
+        subheading="Get your free, no-obligation quote and start your own transformation."
+      />
     </main>
   );
 }

@@ -29,6 +29,11 @@ export const services = [
     detail:
       "Cabinets, doors and islands professionally prepped and sprayed for a smooth, durable, factory-style finish. Kitchen resprays start from €875.",
     icon: "home",
+    features: [
+      "Cabinets, doors & islands",
+      "Bespoke colour matching",
+      "Kitchen resprays from €875",
+    ],
   },
   {
     id: "upvc",
@@ -38,6 +43,11 @@ export const services = [
     detail:
       "Tired timber-effect or faded uPVC and aluminium frames refinished on-site in a colour of your choice, including popular shades like RAL 7016 Anthracite Grey.",
     icon: "door",
+    features: [
+      "Doors, windows & frames",
+      "Popular shades like RAL 7016 Anthracite Grey",
+      "Resprayed on-site, no removal",
+    ],
   },
   {
     id: "furniture",
@@ -47,6 +57,11 @@ export const services = [
     detail:
       "From single statement pieces to full interior joinery, sprayed to a smooth, even, long-lasting finish.",
     icon: "sofa",
+    features: [
+      "Wardrobes, drawers & skirting",
+      "Single pieces or full interiors",
+      "Smooth, long-lasting finish",
+    ],
   },
   {
     id: "commercial",
@@ -56,6 +71,11 @@ export const services = [
     detail:
       "Commercial and shop front spraying carried out with minimal disruption to your business.",
     icon: "store",
+    features: [
+      "Shop fronts & commercial units",
+      "Minimal disruption to trading",
+      "Durable, high-quality finish",
+    ],
   },
 ] as const;
 
@@ -157,9 +177,19 @@ export const faqs = [
       "A wide range of colours is available so you can choose a bespoke finish to suit your style, from popular shades like Anthracite Grey through to bold statement colours.",
   },
   {
+    question: "What areas do you cover?",
+    answer:
+      "Spray Works is based in Dublin and serves customers Nationwide, carrying out kitchen, furniture, uPVC & aluminium and shop front spraying wherever you're located.",
+  },
+  {
+    question: "Do you spray shop fronts and commercial units?",
+    answer:
+      "Yes. Commercial and shop front spraying is carried out with minimal disruption to your business, giving your premises a durable, high-quality finish.",
+  },
+  {
     question: "How do I get a quote?",
     answer:
-      "Message Spray Works via WhatsApp, phone or the contact form below with your project details for a free, no-obligation quotation.",
+      "Message Spray Works via WhatsApp, phone or the contact page with your project details for a free, no-obligation quotation.",
   },
 ] as const;
 

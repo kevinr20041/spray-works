@@ -52,6 +52,16 @@ export default function Services() {
                 <p className="mt-1 max-w-xl text-sm text-ivory/35">
                   {service.detail}
                 </p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {service.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="border border-ivory/15 px-3 py-1.5 text-xs text-ivory/60"
+                    >
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <ArrowUpRight

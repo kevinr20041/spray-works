@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FadeImage } from "@/components/ui/fade-image";
 
@@ -63,6 +64,20 @@ export default function About() {
               </li>
             ))}
           </ul>
+
+          <p className="mt-10 max-w-lg text-ink/65">
+            Every job starts with a free consultation, followed by thorough
+            preparation and precision masking to protect surrounding
+            surfaces. Read more about{" "}
+            <Link href="/process" className="text-ink underline underline-offset-4 hover:text-ink/70">
+              how the process works
+            </Link>
+            , or head to{" "}
+            <Link href="/services" className="text-ink underline underline-offset-4 hover:text-ink/70">
+              our services
+            </Link>{" "}
+            for a full breakdown of what we spray.
+          </p>
         </motion.div>
       </div>
     </section>
