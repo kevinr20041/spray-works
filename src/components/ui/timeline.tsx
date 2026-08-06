@@ -9,6 +9,7 @@ import React, { useEffect, useRef, useState } from "react";
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
+  icon?: React.ReactNode;
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -40,16 +41,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="flex justify-start pt-10 md:pt-24 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-10 items-center top-32 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-ivory ring-1 ring-ink/10">
-                <div className="h-3 w-3 rounded-full border border-gold-deep bg-gold-deep" />
+              <div className="absolute left-0 flex h-12 w-12 items-center justify-center rounded-full bg-ivory ring-1 ring-ink/10">
+                {item.icon ?? (
+                  <div className="h-3 w-3 rounded-full border border-gold-deep bg-gold-deep" />
+                )}
               </div>
-              <h3 className="hidden font-display text-3xl font-bold text-gold-deep md:block md:pl-20 md:text-4xl">
+              <h3 className="hidden font-display text-3xl font-bold tracking-tight text-ink md:block md:pl-20 md:text-4xl">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <h3 className="mb-3 block font-display text-2xl font-bold text-gold-deep md:hidden">
+              <h3 className="mb-3 block font-display text-2xl font-bold tracking-tight text-ink md:hidden">
                 {item.title}
               </h3>
               {item.content}
@@ -58,7 +61,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         ))}
         <div
           style={{ height: height + "px" }}
-          className="absolute left-8 top-0 w-px overflow-hidden bg-ink/10 [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="absolute left-6 top-0 w-px overflow-hidden bg-ink/10 [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{

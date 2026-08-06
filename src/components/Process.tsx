@@ -1,21 +1,43 @@
 "use client";
 
 import { motion } from "framer-motion";
+import {
+  MessageCircle,
+  Camera,
+  FileText,
+  ShieldCheck,
+  SprayCan,
+  CheckCircle2,
+  type LucideIcon,
+} from "lucide-react";
 import { process } from "@/lib/data";
 import { Timeline } from "@/components/ui/timeline";
 
+const icons: Record<string, LucideIcon> = {
+  message: MessageCircle,
+  camera: Camera,
+  file: FileText,
+  shield: ShieldCheck,
+  spray: SprayCan,
+  check: CheckCircle2,
+};
+
 export default function Process() {
-  const timelineData = process.map((item) => ({
-    title: item.step,
-    content: (
-      <div>
-        <h3 className="font-display text-xl tracking-tight text-ink">
-          {item.title}
-        </h3>
-        <p className="mt-1.5 max-w-md text-ink/60">{item.description}</p>
-      </div>
-    ),
-  }));
+  const timelineData = process.map((item) => {
+    const Icon = icons[item.icon];
+    return {
+      title: item.title,
+      icon: <Icon size={18} className="text-gold-deep" strokeWidth={1.75} />,
+      content: (
+        <div>
+          <span className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-deep/70">
+            Step {item.step}
+          </span>
+          <p className="mt-2 max-w-md text-ink/60">{item.description}</p>
+        </div>
+      ),
+    };
+  });
 
   return (
     <section id="process" className="relative bg-ivory py-24 sm:py-32">

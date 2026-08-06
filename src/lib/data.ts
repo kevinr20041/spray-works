@@ -116,32 +116,38 @@ export const process = [
   {
     step: "01",
     title: "Enquiry",
-    description: "Reach out via WhatsApp, phone or the contact form for a free quote.",
+    description: "Reach out via WhatsApp, phone or the contact page for a free quote.",
+    icon: "message",
   },
   {
     step: "02",
     title: "Consultation",
     description: "Share details or photos of your project so we understand exactly what's needed.",
+    icon: "camera",
   },
   {
     step: "03",
     title: "Quotation",
     description: "Receive a free, no-obligation quotation for your spraying project.",
+    icon: "file",
   },
   {
     step: "04",
     title: "Preparation",
     description: "Thorough preparation and precision masking to protect surrounding surfaces.",
+    icon: "shield",
   },
   {
     step: "05",
     title: "Spray Application",
     description: "Professional spray application for a smooth, even, factory-style coating.",
+    icon: "spray",
   },
   {
     step: "06",
     title: "Final Result",
     description: "A refreshed, factory-quality finish, completed with minimal disruption.",
+    icon: "check",
   },
 ] as const;
 
