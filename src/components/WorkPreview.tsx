@@ -10,29 +10,21 @@ const items = [
     src: "/images/portfolio/shopfront-ba.jpg",
     alt: "Weathered bakery shop front resprayed in deep charcoal",
     label: "Shop Fronts",
-    span: "sm:col-span-2 sm:row-span-2",
-    aspect: "aspect-[4/3] sm:aspect-auto",
   },
   {
-    src: "/images/portfolio/kitchen-island-after.jpg",
-    alt: "Professionally resprayed black kitchen island",
+    src: "/images/portfolio/kitchen-ba.jpg",
+    alt: "Oak kitchen cabinets resprayed in dove grey",
     label: "Kitchens",
-    span: "sm:col-span-1",
-    aspect: "aspect-[4/3]",
   },
   {
     src: "/images/portfolio/furniture-ba.jpg",
     alt: "Bedroom chest of drawers resprayed matte black",
     label: "Furniture",
-    span: "sm:col-span-1",
-    aspect: "aspect-[4/3]",
   },
   {
     src: "/images/portfolio/upvc-ba.jpg",
     alt: "uPVC window frames resprayed anthracite grey",
     label: "uPVC & Aluminium",
-    span: "sm:col-span-2",
-    aspect: "aspect-[4/3] sm:aspect-[21/9]",
   },
 ];
 
@@ -68,7 +60,7 @@ export default function WorkPreview() {
           </Link>
         </motion.div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:auto-rows-[180px]">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => (
             <motion.div
               key={item.src}
@@ -76,17 +68,16 @@ export default function WorkPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.06, ease: [0.23, 1, 0.32, 1] }}
-              className={item.span}
             >
               <Link
                 href="/our-work"
-                className={`group relative block h-full w-full overflow-hidden border border-ivory/10 ${item.aspect}`}
+                className="group relative block aspect-[5/4] w-full overflow-hidden border border-ivory/10"
               >
                 <FadeImage
                   src={item.src}
                   alt={item.alt}
                   fill
-                  sizes="(min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
